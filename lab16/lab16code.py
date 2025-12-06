@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from gpiozero import LED
 app = Flask(__name__)
-led = LED(18) # Change to match your LED!
+led = LED(18) 
 @app.route('/')
 def index():
     return render_template('HTML Code.html')
